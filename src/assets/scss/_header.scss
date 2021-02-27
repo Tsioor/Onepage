@@ -1,0 +1,81 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar-collapse {
+    border-top: 1px solid #ededed;
+    @media(min-width: 992px) {
+        border: none;
+    }
+}
+.navbar {
+    background-color: #fff;
+    padding: 0;
+    @media(min-width: 992px) {
+        align-items: stretch;
+        padding-right: 1rem;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        &.navbar-nav-left {
+            .nav-link {
+                font-size: 0.875rem;
+                overflow: hidden;
+                padding: 1rem;
+                position: relative;
+                @media(min-width: 992px) {
+                    padding: 1.845rem 1.875rem;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -100%;
+                    bottom: 0;
+                    border-bottom: 4px solid #EA4235;
+                    transition: left .3s ease-in-out;
+                    width: 100%;
+                }
+                &:hover, &.active {
+                    background-color: #f5f5f5;
+                    &::after {
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .nav-link {
+            color: #000;
+            font-family: $font-family-second;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-transform: uppercase;
+            transition: all .2s ease-in;
+            @media(min-width: 992px) {
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+            &:hover {
+                color: #EA4235;
+            }
+        }
+    }
+}
+.navbar-brand {
+    background-color: #EA4235;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    @media(min-width: 992px) {
+        height: 80px;
+        width: 80px;
+    }
+}
+.navbar-nav-social {
+    flex-direction: row;
+    @media(min-width: 992px) {
+        flex-direction: column;
+    }
+}
