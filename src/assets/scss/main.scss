@@ -3,4 +3,10 @@
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
 
+@import './global';
 @import './header';
+@import './hero';
+@import './about';
+@import './services';
+@import './works';
+@import './footer';

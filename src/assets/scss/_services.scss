@@ -1,0 +1,16 @@
+.sevices-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86px;
+    margin-bottom: 1.875rem;
+}
+.services-title {
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    + p {
+        font-family: $font-family-second;
+        line-height: 1.25;
+    }
+}

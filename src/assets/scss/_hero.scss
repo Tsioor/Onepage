@@ -1,0 +1,59 @@
+.hero-img {
+    height: 391px;
+    object-fit: cover;
+    width: 100%;
+    @media(min-width: 992px) {
+        height: 491px;
+    }
+    @media(min-width: 1200px) {
+        height: 591px;
+    }
+}
+.carousel-item::before {
+    content: "";
+    background-color: #A11A10;
+    opacity: .15;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.carousel-caption {
+    bottom: auto;
+    top: 50%;
+    text-align: left;
+    transform: translateY(-50%);
+    @media(min-width: 1600px) {
+        left: 0;
+        right: 0;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        max-width: 700px;
+        @media(min-width: 992px) {
+            font-size: 3.5rem;
+        }
+    }
+}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    width: 22px;
+    height: 41px;
+    background: center / 100% 100% no-repeat;
+}
+.carousel-control-prev-icon {
+    background-image: url(../images/icon-arrow-left.png);
+}
+.carousel-control-next-icon {
+    background-image: url(../images/icon-arrow-right.png);
+}
+
+@media(min-width: 1600px) {
+    .carousel-control-prev, 
+    .carousel-control-next {
+        z-index: 10;
+    }
+}

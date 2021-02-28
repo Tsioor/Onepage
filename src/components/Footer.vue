@@ -1,9 +1,9 @@
 <template>
     <footer id="footer" class="footer">
-        <div class="container">
+        <div class="container py-5">
             <h2 class="title-section text-white">SAY HELLO</h2>
-            <div class="row">
-                <div class="col-md-5">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-5">
                     <b-tabs content-class="mt-3">
                         <b-tab title="Paris" active>
                             <address>
@@ -18,7 +18,7 @@
                             </address>
                         </b-tab>
                     </b-tabs>
-                    <div class="social">
+                    <div class="social mb-4">
                         <h3>FOLLOW US</h3>
                         <b-navbar-nav class="navbar-nav-social flex-row">
                             <b-nav-item href="#" class="px-2"><span class="fab fa-twitter"></span></b-nav-item>
@@ -27,7 +27,7 @@
                         </b-navbar-nav>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-12 col-lg-7">
                     <b-form @submit="onSubmit">
                         <b-form-group id="input-group-name">
                             <b-form-input
@@ -55,7 +55,9 @@
                                 required
                             ></b-form-textarea>
                         </b-form-group>
-                        <b-button type="submit" variant="primary">Send</b-button>
+                        <div class="text-center pt-2">
+                            <b-button type="submit" variant="outline-light" class="btn-lg rounded-pill">Send</b-button>
+                        </div>                        
                     </b-form>
                 </div>
             </div>
@@ -63,10 +65,10 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-auto">
+                    <div class="col-lg-4 mb-3 mb-lg-0">
                         Copyright © Tous droits réservés 2018                     
                     </div>
-                    <div class="col-auto ml-auto">
+                    <div class="col-lg-8 text-lg-right">
                         <a href="#" class="rgpd-link">Conditions générales de vente</a>
                         <a href="#" class="rgpd-link">Politique de confidentialité</a>
                         <a href="#" class="rgpd-link">Mentions légales</a>
@@ -96,10 +98,3 @@
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    .footer {
-        background-color: #323232;
-        margin-top: auto;
-    }
-</style>
